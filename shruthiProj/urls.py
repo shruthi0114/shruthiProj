@@ -21,6 +21,8 @@ from . import views
 
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
-      url(r'^/', views.index, name='index'),
-      url(r'^date/',views.date, name = 'date' )
+      url(r'^$', views.index, name='index'),
+      url(r'^date/',views.date, name = 'date'),
+      url(r'^create/',views.create, name = 'create'),
+      url(r'^delete/',views.delete, name = 'delete')
 ]
